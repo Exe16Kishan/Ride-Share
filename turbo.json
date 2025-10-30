@@ -14,6 +14,7 @@
 			"dependsOn": ["^check-types"]
 		},
 		"dev": {
+			"dependsOn": ["^db:start"],
 			"cache": false,
 			"persistent": true
 		},
@@ -35,7 +36,7 @@
 		},
 		"db:start": {
 			"cache": false,
-			"persistent": true
+			"persistent": false
 		},
 		"db:stop": {
 			"cache": false,
