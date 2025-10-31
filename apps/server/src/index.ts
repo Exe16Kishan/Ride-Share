@@ -23,6 +23,14 @@ app.get("/", (_req, res) => {
 	res.status(200).send("OK");
 });
 
+app.post("/request-ride",(req, res)=>{
+	res.json({message :" request api"})
+})
+
+app.post("/post-ride",(req,res)=>{
+	res.json({message:"post ride request"})
+})
+
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
 	console.log(`Server is running on port ${port}`);
