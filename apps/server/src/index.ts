@@ -31,6 +31,13 @@ app.post("/post-ride",(req,res)=>{
 	res.json({message:"post ride request"})
 })
 
+app.post("/status/:userId",(req, res)=>{
+	const {userId} = req.params;
+	// query in db for active status
+	// if active then change it to inactive
+	// send 
+})
+
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
 	console.log(`Server is running on port ${port}`);
