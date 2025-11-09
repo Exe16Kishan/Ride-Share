@@ -23,11 +23,11 @@ app.get("/", (_req, res) => {
 	res.status(200).send("OK");
 });
 
-app.post("/request-ride",(req, res)=>{
+app.post("/request-ride",(_req, res)=>{
 	res.json({message :" request api"})
 })
 
-app.post("/post-ride",(req,res)=>{
+app.post("/post-ride",(_req,res)=>{
 	res.json({message:"post ride request"})
 })
 
